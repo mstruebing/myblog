@@ -7,3 +7,10 @@ document.addEventListener('scroll', function() {
     navBar.classList.remove('shrink');
   }
 })
+
+var navButton = document.getElementById('navButton');
+var navBar = document.getElementById('navBar');
+
+navButton.addEventListener('click', function() {
+  navBar.classList.toggle('collapse');
+});
