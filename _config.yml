@@ -22,7 +22,6 @@ google_analytics_key:
 # Yandex metrika (https://metrica.yandex.com/) leave blanc to ignore or put true to use
 yandex_metrica:
 
-
 # Set this to your disqus shortname to enable comments. Note that the 'comments'
 # setting below must also be true. Individual posts can override 'comments' to
 # disable on a post-by-post basis
@@ -39,5 +38,11 @@ highlighter: pygments
 markdown: kramdown
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
+
+jekyll-press:
+  exclude: 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
+  js_options: {}      # js minifier options
+  css_options: {}     # css minifier options
+  html_options: {}    # html minifier options
 
 exclude: ['README.md', 'LICENSE']
