@@ -7,7 +7,7 @@ layout: null
 	<channel>
 		<title>{{ site.name }}</title>
 		<description>{{ site.description }}</description>
-		<link>{{site.baseurl | prepend:site.url}}</link>
+		<link>maex.me</link>
 		<atom:link href="{{site.baseurl | prepend:site.url}}/feed.xml" rel="self" type="application/rss+xml" />
 		{% for post in site.posts limit:10 %}
 			<item>
