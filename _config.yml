@@ -39,6 +39,9 @@ markdown: kramdown
 kramdown:
   input: GFM # Enable GitHub Flavored Markdown (fenced code blocks)
 
+gems:
+  - jekyll-sitemap
+
 jekyll-press:
   exclude: 'feed.xml' # Exclude files from processing - file name, glob pattern or array of file names and glob patterns
   js_options: {}      # js minifier options
