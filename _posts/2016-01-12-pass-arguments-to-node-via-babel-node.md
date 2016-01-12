@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Pass arguments to node via babel-node"
-date: 2015-12-20 00:23:07
+date: 2016-01-12 11:00:00
 description: I came across a problem that arguments given to node via babel-node prefixed with -- are not passed
-tags: me
+tags: javascript babel node
 ---
 
 # Hello everybody
