@@ -3,7 +3,7 @@ layout: post
 title: "Execute multiple commands on files with find"
 date: 2016-01-19 11:00:00
 description: In this post I will show you how you can execute multiple commands on files via find
-tags: bash shell linux
+tags: bash shell linux find
 ---
 
 # Hello everybody
@@ -33,3 +33,11 @@ So this would be the command:
 `find . -name "*.zip" \( -exec unzip {} -d . \; -o -exec true \; \) -exec rm {} \;`
 
 Thanks four your patience, see you next time. ;)
+
+Update: You are also able to pipe your commands.  
+`find . -iname \*.c -exec sh -c "cat '{}' | less" \;`
+
+And of course you can use a script to do what you want:  
+`find . -iname \*.c -exec xyz.sh {} \;`
+
+Disadvantages of that is that you will spawn a new shell for each file, if you have a huge amount of files this will cause performance loss.
