@@ -34,7 +34,8 @@ So this would be the command:
 
 Thanks four your patience, see you next time. ;)
 
-Update: You are also able to pipe your commands.  
+## Update: 
+You are also able to pipe your commands.  
 `find . -iname \*.c -exec sh -c "cat '{}' | less" \;`
 
 And of course you can use a script to do what you want:  
