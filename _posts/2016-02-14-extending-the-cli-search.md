@@ -28,7 +28,7 @@ To install the tool you simply do `sudo npm install -g web-s` and it is done.
 
 The full code:
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 #!/usr/bin/env node
 
 import open from 'open';

@@ -36,7 +36,7 @@ The only dependency is, besides gulp, babel, mocha and chai stuff, open - a libr
 
 The main code is here, nothing special if you didn't want to see it on github.
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 #!/usr/bin/env node
 
 import open from 'open';
