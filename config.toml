@@ -1,0 +1,55 @@
+baseURL = "https://maex.me/"
+languageCode = "en-us"
+title = "Max Strübing"
+theme = "after-dark"
+
+googleAnalytics = "UA-72326389-1" # Optional, add tracking Id for analytics
+disqusShortname = "" # Optional, add Disqus shortname for comments
+SectionPagesMenu = "main" # Enable menu system for lazy bloggers
+footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+
+[params]
+  description = "This is the blog of me, Max Strübing, I will blog about anything I'm interested in, but mostly about technical related stuff" # Suggested, controls default description meta
+  author = "Max Strübing" # Optional, controls author name display on posts
+  hide_author = false # Optional, set true to hide author name on posts
+  show_menu = true # Optional, set true to enable section menu
+  powered_by = true # Optional, set false to disable credits
+  images = [] # Suggested, adds default OpenGraph images
+
+[blackfriday]
+  hrefTargetBlank = true # open external links in a new tab
+
+[permalinks]
+  post = '/:year/:month/:title/'
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    weight = 1
+    identifier = "home"
+    url = "/"
+  [[menu.main]]
+    name = "Posts"
+    weight = 2
+    identifier = "post"
+    url = "/post/"
+  [[menu.main]]
+    name = "Categories"
+    weight = 3
+    identifier = "categories"
+    url = "/categories/"
+  [[menu.main]]
+    name = "Tags"
+    weight = 3
+    identifier = "tags"
+    url = "/tags/"
+  [[menu.main]]
+    name = "Contact"
+    weight = 6
+    identifier = "contact"
+    url = "/contact/"
+  [[menu.main]]
+    name = "About"
+    weight = 5
+    identifier = "about"
+    url = "/about/"
