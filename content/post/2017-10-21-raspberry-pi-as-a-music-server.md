@@ -1,7 +1,7 @@
 +++
 title = "Raspberry Pi as a Music Server"
-date = 2017-10-21T14:37:20+02:00
-publishDate= 2017-10-21T14:37:20+02:00
+date = 2017-10-31T14:37:20+02:00
+publishDate= 2017-10-31T14:37:20+02:00
 description = "How I set up my Raspberry Pi as a simple music server"
 draft = false
 categories = ["tech"]
@@ -9,7 +9,7 @@ keywords = ["raspberry", "rpi", "music", "server", "mopidy", "mopify"]
 tags = ["raspberry", "rpi", "music", "server", "mopidy", "mopify"]
 toc = true
 images = [
-    "/img/mopidy/mopify.png"
+    "/img/mopidy/mopidy_mopify_connected.png"
 ] # overrides the site-wide open graph image
 +++
 
