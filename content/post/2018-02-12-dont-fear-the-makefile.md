@@ -4,6 +4,7 @@ date = 2018-02-12T18:15:29+01:00
 publishDate= 2018-02-16T00:00:00+01:00
 description = "A simple Makefile tutorial describing the basics and todays possible usage"
 draft = false
+categories = ["tech"]
 tags = ["unix", "linux", "programming", "tutorial", "build-tools"]
 keywords = ["unix", "linux", "programming", "tutorial", "build-tools"]
 toc = true
