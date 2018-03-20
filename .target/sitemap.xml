@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://maex.me/archive/</loc>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/2018/02/dont-fear-the-makefile/</loc>
+    <lastmod>2018-02-12T18:15:29+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/2017/10/raspberry-pi-as-a-music-server/</loc>
+    <lastmod>2017-10-31T10:00:00+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/2017/01/why-i-like-wc/</loc>
+    <lastmod>2017-01-13T06:36:06+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/2016/11/you-might-not-need-scripty/</loc>
+    <lastmod>2016-11-14T06:36:06+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/2016/11/execute-multiple-commands-on-files-with-find/</loc>
+    <lastmod>2016-11-04T06:36:06+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/2016/06/writing-a-simple-cli-tool-in-haskell/</loc>
+    <lastmod>2016-06-25T06:36:06+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/build-tools/</loc>
+    <lastmod>2018-02-12T18:15:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/contact/</loc>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/haskell/</loc>
+    <lastmod>2016-06-25T06:36:06+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/javascript/</loc>
+    <lastmod>2016-11-14T06:36:06+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/linux/</loc>
+    <lastmod>2018-02-12T18:15:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/</loc>
+    <lastmod>2018-02-12T18:15:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/mopidy/</loc>
+    <lastmod>2017-10-31T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/mopify/</loc>
+    <lastmod>2017-10-31T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/music/</loc>
+    <lastmod>2017-10-31T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/nodejs/</loc>
+    <lastmod>2016-11-14T06:36:06+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/post/</loc>
+    <lastmod>2018-02-12T18:15:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/programming/</loc>
+    <lastmod>2018-02-12T18:15:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/raspberry/</loc>
+    <lastmod>2017-10-31T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/rpi/</loc>
+    <lastmod>2017-10-31T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/server/</loc>
+    <lastmod>2017-10-31T10:00:00+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/</loc>
+    <lastmod>2018-02-12T18:15:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/categories/tech/</loc>
+    <lastmod>2018-02-12T18:15:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/tutorial/</loc>
+    <lastmod>2018-02-12T18:15:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/unix/</loc>
+    <lastmod>2018-02-12T18:15:29+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://maex.me/tags/why-i-like/</loc>
+    <lastmod>2017-01-13T06:36:06+02:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

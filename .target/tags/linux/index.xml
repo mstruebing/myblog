@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Max Strübing</title>
+    <link>https://maex.me/tags/linux/</link>
+    <description>Recent content in Linux on Max Strübing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 12 Feb 2018 18:15:29 +0100</lastBuildDate>
+    
+	<atom:link href="https://maex.me/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Dont Fear the Makefile</title>
+      <link>https://maex.me/2018/02/dont-fear-the-makefile/</link>
+      <pubDate>Mon, 12 Feb 2018 18:15:29 +0100</pubDate>
+      
+      <guid>https://maex.me/2018/02/dont-fear-the-makefile/</guid>
+      <description>Introduction I&amp;rsquo;m writing this because I have the feeling that many developers underestimate the power of Makefiles and they are simply not aware of this nice and handy tool which is installed on nearly every Unix-like machine. To be honest, who have never executed a make install or something similar? Most tutorials I&amp;rsquo;ve found out there are bloated with stuff, more complex than they would have to and you have to read pages after pages to get the basics.</description>
+    </item>
+    
+    <item>
+      <title>Why I like wc</title>
+      <link>https://maex.me/2017/01/why-i-like-wc/</link>
+      <pubDate>Fri, 13 Jan 2017 06:36:06 +0200</pubDate>
+      
+      <guid>https://maex.me/2017/01/why-i-like-wc/</guid>
+      <description>Wc is a small handy tool which I use often. I&amp;rsquo;m calling it word-count in my head.(Today I learned by looking wc up on Wikipedia: it is actually called word count) It is part of the GNU coreutils it should be on nearly any system.
+What can you do with wc? With wc you can simply count lines, words or characters of a file or string, and thats it. Nothing more or less.</description>
+    </item>
+    
+    <item>
+      <title>Execute multiple commands on files with find</title>
+      <link>https://maex.me/2016/11/execute-multiple-commands-on-files-with-find/</link>
+      <pubDate>Fri, 04 Nov 2016 06:36:06 +0200</pubDate>
+      
+      <guid>https://maex.me/2016/11/execute-multiple-commands-on-files-with-find/</guid>
+      <description>Hello everybody In this post I will show you how you can execute multiple commands on files via find.
+Firstly how to use find:
+find -type f -iname &amp;#34;*.extension&amp;#34; This will find all files under the working dir with the given extension. Of course you can use other things like filesize, user who owns that file etc. But for that example I will using this.
+For example if we have multiple .</description>
+    </item>
+    
+  </channel>
+</rss>
