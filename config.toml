@@ -44,6 +44,11 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
     identifier = "tags"
     url = "/tags/"
   [[menu.main]]
+    name = "Projects"
+    weight = 4
+    identifier = "projects"
+    url = "/projects/"
+  [[menu.main]]
     name = "Contact"
     weight = 6
     identifier = "contact"

@@ -4,5 +4,5 @@ name = "Archive"
 url = "/archive/"
 menu = "main"
 type = "archive"
-weight = 4
+weight = 10
 +++
