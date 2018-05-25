@@ -3,7 +3,6 @@ languageCode = "en-us"
 title = "Max Strübing"
 theme = "after-dark"
 
-googleAnalytics = "UA-72326389-1" # Optional, add tracking Id for analytics
 disqusShortname = "" # Optional, add Disqus shortname for comments
 SectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
