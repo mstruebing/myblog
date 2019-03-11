@@ -9,7 +9,7 @@ tags = ["go", "golang", "programming", "tutorial"]
 keywords = ["go", "golang", "programming", "tutorial"]
 toc = true
 images = [
-	"/img/gopher.png"
+	"/img/go-introduction/gopher.png"
 ]
 +++
 
