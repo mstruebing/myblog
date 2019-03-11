@@ -21,6 +21,9 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
 [permalinks]
   post = '/:year/:month/:title/'
 
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
 [menu]
   [[menu.main]]
     name = "Home"
@@ -57,3 +60,11 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
     weight = 5
     identifier = "about"
     url = "/about/"
+  [[menu.main]]
+    name = "Search"
+    weight = 7
+    identifier = "search"
+    url = "/search/"
+
+[params.seo.webmaster_verifications]
+    google = "ZxfPe09_d4lsLtpT9VxbLpYQKoqT-A0ja_WW42zjgUk"

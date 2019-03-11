@@ -30,10 +30,11 @@ every command line client program out there. Very handy in day to day usage.
 
 This is a code quality tool to ensure that your files respect the definitions of
 the `.editorconfig`-file inside your projects.
-I've finished the implementation in two languages already:
+There is a core written Go: [editorconfig-checker](https://github.com/editorconfig-checker/editorconfig-checker)
 
-* [Editorconfig-checker.php](https://github.com/editorconfig-checker/editorconfig-checker.php)
-* [Editorconfig-checker.javascript](https://github.com/editorconfig-checker/editorconfig-checker.javascript)
+And I've currently finished one language wrapper in JavaScript: [Editorconfig-checker.javascript](https://github.com/editorconfig-checker/editorconfig-checker.javascript)
+
+The PHP implementation still uses its own implementation, but I will finish the wrapper soon: [Editorconfig-checker.php](https://github.com/editorconfig-checker/editorconfig-checker.php)
 
 ---
 
