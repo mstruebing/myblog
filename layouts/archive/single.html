@@ -2,8 +2,8 @@
   {{ .Params.name }} | {{ .Site.Title }}
 {{- end }}
 {{ define "header" }}
-  {{ partial "menu" . }}
-{{ end }}
+  {{ partial "masthead" . }}
+{{- end }}
 {{ define "main" }}
   <header>
     <h1>{{ .Title }}</h1>
