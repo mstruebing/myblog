@@ -6,7 +6,9 @@ title: "About"
 
 ### General
 
-Hi, I'm Max from Hamburg/Germany. I'm coding since 2012 and I currently work for [sitegeist media solutions GmbH](https://www.sitegeist.de). Since July 2017 I'm also an active [Neos](https://www.neos.io) core [team member](https://www.neos.io/community/teams.html).
+Hi, I'm Max from Hamburg/Germany. I'm coding since 2012 and I'm a Software Engineer at [farbenmeer GmbH](https://farbenmeer.de).  
+
+From July 2017 until January 2019 I was an active [Neos](https://www.neos.io) core [team member](https://www.neos.io/community/teams.html) where I worked mostly on the [React](https://reactjs.org/)/[Redux](https://redux.js.org/) user interface for editors (the frontend for the backend ;)).  
 
 In general I'm interested in all kinds of computer science but my main focus is clearly in web development since this is my day to day job.
 
@@ -18,8 +20,7 @@ If you want to know more about me or my projects you can visit my [GitHub](https
 #### Good
 * php
 * css/sass/less
-* javascript/nodejs
-* linux
+* JavaScript/NodeJS
 * elm
 * golang
 * bash
@@ -47,5 +48,5 @@ For more information visit my [dotfiles repository](https://github.com/mstruebin
 * (clean) code 
 * interesting [meet ups](https://www.meetup.com/de-DE/members/185647988/?op=&memberId=185647988)
 * [books](https://www.goodreads.com/user/show/54062005-max)
-* music (rock/metal/alternative/classic)
+* music (rock/metal/alternative/classic/jazz)
 * guitar
