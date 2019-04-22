@@ -83,7 +83,21 @@ Go has a test runner and benchmarker included. Everything you need to do is if y
 
 ### package management
 
-Go also has a simple mechanic to use dependencies. You import them as every core library but instead of only the name you are using the GitHub link like `import "github.com/<user>/<repository>"` and that is all. There are some pitfalls by that. Go always uses the master branch of the package which is kind of bad. But there are alternatives. One which is very common is to clone the remote repository and put it in your own version control in a vendor directory. This is called vendorizing but is also not the perfect solution.  There is [gopkg](https://labix.org/gopkg.in) which does help in this case and you can require explicit branches or tags. You would require it like `import "gopkg.in/<user>/<repository>.<tagname|branchname>"`. This is a bit better and you can rely on [semver](https://semver.org/). At last, there was released a tool named [dep](https://golang.github.io/dep/), which looks like a more sophisticated solution. There you can specify in a special file (`Gopkg.toml`) which dependency you want and either which branch, version, tag or commit hash you want. You can also include version ranges like in `package.json` or `composer.json` for example. It also creates a lock file to ensure everyone gets the same dependencies. Dep isn't in the core yet, but it's widely used and I think the recommended method to do dependency management in go today. It's from the Go authors and is called an "official experiment".
+Go also has a simple mechanic to use dependencies. You import them as every core library but instead of only the name you are using the GitHub link like `import "github.com/<user>/<repository>"` and that is all. 
+
+~~There are some pitfalls by that. Go always uses the master branch of the package which is kind of bad. But there are alternatives. One which is very common is to clone the remote repository and put it in your own version control in a vendor directory. This is called vendorizing but is also not the perfect solution.  There is [gopkg](https://labix.org/gopkg.in) which does help in this case and you can require explicit branches or tags. You would require it like `import "gopkg.in/<user>/<repository>.<tagname|branchname>"`. This is a bit better and you can rely on [semver](https://semver.org/). At last, there was released a tool named [dep](https://golang.github.io/dep/), which looks like a more sophisticated solution. There you can specify in a special file (`Gopkg.toml`) which dependency you want and either which branch, version, tag or commit hash you want. You can also include version ranges like in `package.json` or `composer.json` for example. It also creates a lock file to ensure everyone gets the same dependencies. Dep isn't in the core yet, but it's widely used and I think the recommended method to do dependency management in go today. It's from the Go authors and is called an "official experiment".~~
+
+Since version 1.11 Go ships with `go mod` which is very simple to use. You start with `go mod init github.com/<username>/<reponame>` which creates you a `go.mod` file with the module name and the current Go version:
+{{<  highlight go >}}
+module github.com/<username>/<reponame>
+
+go 1.12
+{{</  highlight >}}
+
+When you import something in your source and do a `go build` your `go.mod` file is automatically updated and contains the dependency you need together with some version information to be able to do reproducible builds.
+Along the way there was also a `go.sum` file created which contains some cryptographic hashes of the content of the dependency modules.
+
+If you want to learn more you can read the [Go wiki on Modules](https://github.com/golang/go/wiki/Modules).
 
 ### Documentation
 
