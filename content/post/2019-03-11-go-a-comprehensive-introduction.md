@@ -1,5 +1,6 @@
 +++
 title = "Go: A Comprehensive Introduction"
+date = 2019-03-10T18:15:29+01:00
 publishDate= 2019-03-11T00:00:00+01:00
 description = "A comprehensive introduction to the go programming language"
 draft = false
