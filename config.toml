@@ -3,17 +3,36 @@ languageCode = "en-us"
 title = "Max Strübing"
 theme = "after-dark"
 
-disqusShortname = "" # Optional, add Disqus shortname for comments
 SectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
+paginate = 10
+
+[params.layout]
+  type = 4
+
+[params.layout.home]
+  hide_blog = true
 
 [params]
   description = "This is the blog of me, Max Strübing, I will blog about anything I'm interested in, but mostly about technical related stuff" # Suggested, controls default description meta
   author = "Max Strübing" # Optional, controls author name display on posts
   hide_author = false # Optional, set true to hide author name on posts
   show_menu = true # Optional, set true to enable section menu
-  powered_by = true # Optional, set false to disable credits
+  powered_by = false # Optional, set false to disable credits
   images = [] # Suggested, adds default OpenGraph images
+
+[[params.layout.home.section]]
+  type = "post"
+  limit = 1
+  weight = 1
+
+[[params.layout.home.section]]
+  type = "about"
+  weight = 2
+
+[[params.layout.home.section]]
+  type = "contact"
+  weight = 3
 
 [blackfriday]
   hrefTargetBlank = true # open external links in a new tab
@@ -65,6 +84,3 @@ footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
     weight = 7
     identifier = "search"
     url = "/search/"
-
-[params.seo.webmaster_verifications]
-    google = "ZxfPe09_d4lsLtpT9VxbLpYQKoqT-A0ja_WW42zjgUk"
