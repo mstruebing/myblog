@@ -13,7 +13,7 @@ images = [
 ] # overrides the site-wide open graph image
 +++
 
---- 
+---
 
 ## Introduction
 
@@ -32,21 +32,22 @@ I run [mopidy](https://www.mopidy.com/) with [mopidy-spotify](https://github.com
 
 So what are all these things?
 Mopidy is a mpd server which simply stands for music player daemon.
-On there website is written: 
+On there website is written:
 
 > Mopidy is an extensible music server written in Python.
 
 And thats it, no more no less. Without anything else mopidy can play music from your disk.
-Mopidy-spotify is the bridge between mopidy and spotify which enables you to play all kind of things 
+Mopidy-spotify is the bridge between mopidy and spotify which enables you to play all kind of things
 from spotify. You can play and manage your play lists, favourite artists, songs, albums and search for all these things.
 Mopidy-spotify-tunigo is to enable the browse feature of spotify, like genres, browse featured play lists or new releases.
 Mopidy-mopify is just a web front end to interact with mopidy in the style of spotify. This way I can control mopidy via a browser from every device on my network.
 There are tons of other web front ends out there for mopidy you can have a look [here](https://docs.mopidy.com/en/latest/ext/web/).
 It is also possible to connect via a CLI-client. I often just use [ncmpcpp](https://github.com/arybczak/ncmpcpp) which is a very wide used terminal music player.
-Ncmpcpp simply stands for [ncurses](https://en.wikipedia.org/wiki/Ncurses) music player written in C++. 
+Ncmpcpp simply stands for [ncurses](https://en.wikipedia.org/wiki/Ncurses) music player written in C++.
 There is also [ncmpc](https://github.com/MusicPlayerDaemon/ncmpc) which is not so feature rich.
 
 ---
+
 ## Hands on
 
 So what do we have to do to get this all to work?
@@ -58,13 +59,21 @@ I assume that raspian is already set up correctly.
 What we have to do to install mopidy:
 
 {{<  highlight bash >}}
+
 # add the gpg key of the archive
+
 wget -q -O - https://apt.mopidy.com/mopidy.gpg | sudo apt-key add -
+
 # add the repository to your package sources
+
 sudo wget -q -O /etc/apt/sources.list.d/mopidy.list https://apt.mopidy.com/jessie.list
+
 # update your package sources
+
 sudo apt-get update
+
 # install mopidy
+
 sudo apt-get install mopidy
 {{< /highlight >}}
 
@@ -88,47 +97,47 @@ To get it simply type `ifconfig` in your terminal on your Raspberry Pi.
 The output should be something like this:
 
 {{<  highlight bash "linenos=inline,hl_lines=2 20" >}}
-eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 192.168.2.115  netmask 255.255.255.0  broadcast 192.168.2.255
-        inet6 fe80::e1f5:a318:5a1:faae  prefixlen 64  scopeid 0x20<link>
-        ether b8:27:eb:f5:35:39  txqueuelen 1000  (Ethernet)
-        RX packets 122946  bytes 108989790 (103.9 MiB)
-        RX errors 0  dropped 6  overruns 0  frame 0
-        TX packets 69604  bytes 45306826 (43.2 MiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500
+inet 192.168.2.115 netmask 255.255.255.0 broadcast 192.168.2.255
+inet6 fe80::e1f5:a318:5a1:faae prefixlen 64 scopeid 0x20<link>
+ether b8:27:eb:f5:35:39 txqueuelen 1000 (Ethernet)
+RX packets 122946 bytes 108989790 (103.9 MiB)
+RX errors 0 dropped 6 overruns 0 frame 0
+TX packets 69604 bytes 45306826 (43.2 MiB)
+TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0
 
-lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
-        inet 127.0.0.1  netmask 255.0.0.0
-        inet6 ::1  prefixlen 128  scopeid 0x10<host>
-        loop  txqueuelen 1  (Local Loopback)
-        RX packets 101  bytes 10202 (9.9 KiB)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 101  bytes 10202 (9.9 KiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+lo: flags=73<UP,LOOPBACK,RUNNING> mtu 65536
+inet 127.0.0.1 netmask 255.0.0.0
+inet6 ::1 prefixlen 128 scopeid 0x10<host>
+loop txqueuelen 1 (Local Loopback)
+RX packets 101 bytes 10202 (9.9 KiB)
+RX errors 0 dropped 0 overruns 0 frame 0
+TX packets 101 bytes 10202 (9.9 KiB)
+TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0
 
-wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
-        inet 192.168.2.112  netmask 255.255.255.0  broadcast 192.168.2.255
-        inet6 fe80::8e77:ec92:7756:4074  prefixlen 64  scopeid 0x20<link>
-        ether b8:27:eb:a0:60:6c  txqueuelen 1000  (Ethernet)
-        RX packets 9013  bytes 724165 (707.1 KiB)
-        RX errors 0  dropped 0  overruns 0  frame 0
-        TX packets 1539  bytes 133713 (130.5 KiB)
-        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+wlan0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST> mtu 1500
+inet 192.168.2.112 netmask 255.255.255.0 broadcast 192.168.2.255
+inet6 fe80::8e77:ec92:7756:4074 prefixlen 64 scopeid 0x20<link>
+ether b8:27:eb:a0:60:6c txqueuelen 1000 (Ethernet)
+RX packets 9013 bytes 724165 (707.1 KiB)
+RX errors 0 dropped 0 overruns 0 frame 0
+TX packets 1539 bytes 133713 (130.5 KiB)
+TX errors 0 dropped 0 overruns 0 carrier 0 collisions 0
 {{< /highlight >}}
 <sub>ifconfig</sub>
 
 In line two, after inet, you see it's ip. If you connect via wireless lan it would be in line 29.
 
-If you now type `sudo service mopidy start` into your terminal and head to `192.168.2.115:6680` in this case. I will use this ip address in the rest of this article. 
-Just exchange it for you ip. 
+If you now type `sudo service mopidy start` into your terminal and head to `192.168.2.115:6680` in this case. I will use this ip address in the rest of this article.
+Just exchange it for you ip.
 
 You should already be able to see this:
 
-<a href="/img/mopidy/mopidy_clean.png" target="_blank"><img class="lazyload" data-src="/img/mopidy/mopidy_clean_780px.png" alt="mopidy http screen" title="mopidy"></a>
+![mopidy](/img/mopidy/mopidy_clean.png)
 
---- 
+---
 
-At next we want to install `mopidy-spotify` 
+At next we want to install `mopidy-spotify`
 
 {{<  highlight bash >}}
 sudo apt-get install mopidy-spotify
@@ -147,7 +156,7 @@ client_secret = <your client secret>
 {{< /highlight >}}
 <sub>/etc/mopidy/mopidy</sub>
 
-The client id and secret is easily obtainable via  [this link](https://www.mopidy.com/authenticate/#spotify). Click on login with spotify and after you logged in the data appears in the text field. 
+The client id and secret is easily obtainable via [this link](https://www.mopidy.com/authenticate/#spotify). Click on login with spotify and after you logged in the data appears in the text field.
 If you want to configure more like the amount of search results for example have look at the [readme](https://github.com/mopidy/mopidy-spotify#configuration) of the mopidy-spotify.
 
 ---
@@ -170,7 +179,7 @@ enabled = true
 
 Now all we need is `mopify`:
 
-We need `pip` for that - the python package manager-  but fortunately raspian has it already installed.
+We need `pip` for that - the python package manager- but fortunately raspian has it already installed.
 
 {{<  highlight bash >}}
 sudo pip install Mopidy-Mopify
@@ -181,7 +190,6 @@ If it's not already installed on your system you can install it on an ubuntu lik
 {{<  highlight bash >}}
 sudo apt-get install python-pip
 {{< /highlight >}}
-
 
 Again a really simple configuration:
 
@@ -198,11 +206,11 @@ Now restart mopidy as a service: `sudo service mopidy restart`.
 
 Open your browser again at `192.168.2.115:6680/mopidy`.
 
-<a href="/img/mopidy/mopidy_mopify_clean.png" target="_blank"><img class="lazyload" data-src="/img/mopidy/mopidy_mopify_clean_780px.png" alt="mopidy http screen with mopify" title="mopidy with mopify"></a>
+![mopidy without mopify](/img/mopidy/mopidy_mopify_clean.png)
 
 We can see that `mopify` is set up correctly. Click on it and see:
 
-<a href="/img/mopidy/mopidy_mopify_unconnected.png" target="_blank"><img class="lazyload" data-src="/img/mopidy/mopidy_mopify_unconnected_780px.png" alt="mopidy http screen with mopify unconnected" title="mopidy with mopify unconnected"></a>
+![mopidy http screen with mopify unconnected](/img/mopidy/mopidy_mopify_unconnected.png)
 
 Go to `services` in the navigation and enable the sync service by simply clicking on it.
 When you hover over it you can go to settings and enable synchronization of your spotify credentials as well.
@@ -210,12 +218,12 @@ Next enable the spotify service, maybe you have to log in again.
 
 And that's it. If you now go to `192.168.2.115:668/mopify` you should see some cool stuff like this:
 
-<a href="/img/mopidy/mopidy_mopify_connected.png" target="_blank"><img class="lazyload" data-src="/img/mopidy/mopidy_mopify_connected_780px.png" alt="mopidy http screen with mopify connected" title="mopidy with mopify connected"></a>
+![mopidy with mopify connected](/img/mopidy/mopidy_mopify_connected.png)
 
 ---
 
-__If you didn't see the welcome screen to load playlists and in the bottom left corner that spotify is disconnected you just need to reload if your sync settings are set up correctly__ 
- 
+**If you didn't see the welcome screen to load playlists and in the bottom left corner that spotify is disconnected you just need to reload if your sync settings are set up correctly**
+
 ---
 
 If you want to connect via ncmpcpp to your Raspberry Pi you just need to run: `ncmpcpp --host 192.168.2.115 --port 6680` or set some config values for ncmpcpp.
@@ -232,7 +240,7 @@ If this is working your should be able to simply play sound through mopify. :)
 
 ## Control
 
-You can control this little thing with a browser. 
+You can control this little thing with a browser.
 Even with a mobile phone it is quite good usable.
 But of course there are other methods too.
 
@@ -256,7 +264,7 @@ But that's up to you.
 This whole setup doesn't need much system resources.
 This is a screenshot of `htop` while playing music, so not even in idle mode.
 
-<a href="/img/mopidy/rpi_system_monitor.png" target="_blank"><img class="lazyload" data-src="/img/mopidy/rpi_system_monitor.png" alt="htop while playing music" title="htop"></a>
+![htop](/img/mopidy/rpi_system_monitor.png)
 
 I've never noticed the ram usage to be more than 115MB and processor usage and load average were always not noticeable.
 So if you are running anything else on your Raspberry Pi and are in doubt that will it use to much performance I think this is not the case.
@@ -268,8 +276,8 @@ So if you are running anything else on your Raspberry Pi and are in doubt that w
 To not need to update manually I simply added a little cronjob which runs updates every night at 1 AM, pauses music if playing and restarts the mopidy server.
 
 {{<  highlight bash >}}
-0 1 * * * apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove && apt-get autoclean
-0 1 * * * mpc pause && service mopidy restart
+0 1 \* \* _ apt-get update && apt-get upgrade -y && apt-get dist-upgrade -y && apt-get autoremove && apt-get autoclean
+0 1 _ \* \* mpc pause && service mopidy restart
 {{< /highlight >}}
 
 ---
@@ -282,7 +290,7 @@ You can play artists, tracks, added tracks from your library(which would be one 
 This is an issue in `libspotify` currently as far as I know and not an issue with mopidy or mopify.
 Before I had playlists for artists and some mixed ones. Now I simply follow the artists and play them from there.
 
-Also the sound is not very nice from the Raspberry Pi's headphone jack. You will notice quiet disturbing noises. 
+Also the sound is not very nice from the Raspberry Pi's headphone jack. You will notice quiet disturbing noises.
 To end this I simply bought a cheap external USB sound card which I plugged in, put the speaker in it and it worked out of the box.
 You can get one for 5 to 20 Euros, for example [this one](https://www.amazon.com/Sabrent-External-Adapter-Windows-AU-MMSA/dp/B00IRVQ0F8/).
 
@@ -290,7 +298,6 @@ You can get one for 5 to 20 Euros, for example [this one](https://www.amazon.com
 
 ## PICS
 
-<a href="/img/mopidy/rpi.jpg" target="_blank"><img class="lazyload" data-src="/img/mopidy/rpi_780px.jpg" alt="my raspberry pi" title="my raspberry pi"></a>
+![my raspberry pi](/img/mopidy/rpi.jpg)
 
-
-__Thats all, have a niec day.__
+**Thats all, have a niec day.**
