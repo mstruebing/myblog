@@ -15,7 +15,7 @@ images = [
 
 ---
 
-![code](/img/opensource.jpeg/ "code")
+![code](/img/opensource.jpeg "code")
 
 ## What is open source
 
