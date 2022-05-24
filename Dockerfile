@@ -1,8 +1,5 @@
 FROM klakegg/hugo:0.95.0-alpine AS build
 
-RUN apk add git
-RUN git submodule update
-
 WORKDIR /src
 COPY . /src
 
