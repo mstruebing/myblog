@@ -6,9 +6,9 @@ title: "About"
 
 ### General
 
-Hi, I'm Max from Hamburg/Germany. I'm coding since 2012 and I'm a Senior Software Engineer at [D2iQ](https://d2iq.com) working on cloud software.
+Hi, I'm Max from Hamburg/Germany. I'm coding since 2012 and I'm currently working for [D2iQ](https://d2iq.com) as a Senior Software Engineer working on a cloud platform.
 
-From July 2017 until January 2019 I was an active [Neos](https://www.neos.io) core [team member](https://www.neos.io/community/teams.html) where I worked mostly on the [React](https://reactjs.org/)/[Redux](https://redux.js.org/) user interface for editors (the frontend for the backend ;)).
+From July 2017 until January 2019 I was an active [Neos](https://www.neos.io) core [team member](https://www.neos.io/community/teams.html) where I worked mostly on the [React](https://reactjs.org/)/[Redux](https://redux.js.org/) user interface for editors.
 
 In general I'm interested in all kinds of computer science but my main focus is clearly in web development since this is my day to day job.
 
