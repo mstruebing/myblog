@@ -5,7 +5,14 @@ theme = "after-dark"
 
 SectionPagesMenu = "main" # Enable menu system for lazy bloggers
 footnoteReturnLinkContents = "↩" # Provides a nicer footnote return link
-paginate = 10
+
+[pagination]
+  pagerSize = 10
+
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true
+
 
 [params.layout]
   type = 4
@@ -59,11 +66,6 @@ paginate = 10
     weight = 3
     identifier = "categories"
     url = "/categories/"
-  [[menu.main]]
-    name = "Tags"
-    weight = 3
-    identifier = "tags"
-    url = "/tags/"
   [[menu.main]]
     name = "Projects"
     weight = 4

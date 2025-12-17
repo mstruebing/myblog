@@ -9,11 +9,53 @@ school.
 
 ---
 
-## Elmodoro:
-[Code](https://github.com/mstruebing/elmodoro)  
-[InAction](https://pomodoro.maex.me/)
+## [Editorconfig-checker](https://github.com/editorconfig-checker)
 
-An __Elm__ implementation of the popular pomodoro timer.
+This is a code quality tool to ensure that your files respect the definitions of
+the `.editorconfig`-file inside your projects.
+The core is written in Go: [editorconfig-checker](https://github.com/editorconfig-checker/editorconfig-checker)
+and there are multiple language wrappers around it to use it in different environments, currently PHP, JavaScript and Python.
+
+Technologies: __Golang__, __NodeJS__, __PHP__, __Python__, __GitHub Actions__
+
+---
+
+## [Profile-Peek](https://profile-peek.com)
+
+A tool to find profiles of counter-strike players on different platforms.
+Including a browser extension to get profiles directly on Steam as well as on Faceit.
+
+Technologies: __Rust__, __Elm__, __JavaScript__, __Redis__, __FluxCD__
+
+---
+
+## [sback](https://github.com/mstruebing/sback)
+
+A simple personal backup solution with no magic involved, as other soltuions
+out there were to complicated for my use case.
+It takes files, compresses them and uploads it to predefined remote locations.
+
+Technologies: __Rust__
+
+---
+
+## (duration)(https://github.com/mstruebing/duration)
+
+A tool to start a program and monitor how long it's already running.
+I've had a command I knew would take a specific amount of time approximately
+and I wanted to see how long it already ran to know how long I still have to wait.
+
+Technologies: __Golang__
+
+---
+
+## [waitz](https://github.com/mstruebing/waitz)
+
+A command line tool to retry a commadn until the exit code is zero.
+Wrote this because I was tired of retrying commands manually.
+Later on I've found out that I could reproduce the exact same with `watch`. :)
+
+Technologies: __Rust__
 
 ---
 
@@ -24,18 +66,15 @@ A command line client implementation to print pages from
 A very cool project to collect most used command line parameters of nearly 
 every command line client program out there. Very handy in day to day usage.
 
+Technologies: __Golang__
+
 ---
 
-## [Editorconfig-checker](https://github.com/editorconfig-checker)
+## Elmodoro:
+[Code](https://github.com/mstruebing/elmodoro)  
+[InAction](https://pomodoro.maex.me/)
 
-This is a code quality tool to ensure that your files respect the definitions of
-the `.editorconfig`-file inside your projects.
-There is a core written Go: [editorconfig-checker](https://github.com/editorconfig-checker/editorconfig-checker)
-
-And I've currently finished one language wrapper in JavaScript: [Editorconfig-checker.javascript](https://github.com/editorconfig-checker/editorconfig-checker.javascript)
-
-The PHP implementation still uses its own implementation, but I will finish the wrapper soon: [Editorconfig-checker.php](https://github.com/editorconfig-checker/editorconfig-checker.php)
-
+An __Elm__ implementation of the popular pomodoro timer.
 ---
 
 ## [web-s](https://github.com/mstruebing/web-s)
